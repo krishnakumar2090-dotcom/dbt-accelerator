@@ -1,0 +1,4 @@
+incubator_endpoint = "https://eyq-incubator.asiapac.fabric.ey.com/eyq/as/api"
+incubator_key = "PJ4P3G6unjDxSsVAjmf1urF7icO1yVFK"
+model = "gpt-4.1"
+api_version = "2024-10-21"
