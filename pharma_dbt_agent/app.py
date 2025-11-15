@@ -40,8 +40,8 @@ st.markdown("""
 # Logo + Title
 # ----------------------------
 col1, col2, col3 = st.columns([1, 6, 1])
-#with col1:
- #   st.image("Image\DBT_IMAGE.png", width=70)
+with col1:
+    st.image("DBT_IMAGE.png", width=70)
 with col2:
     st.markdown(
         "<h1 style='text-align: center;'>DBT Model Generator Agent</h1>",
