@@ -1,18 +1,3 @@
-'''import os
-from dotenv import load_dotenv
-
-def load_env():
-    """
-    Load environment variables from .env file
-    Returns: INCUBATOR_KEY, INCUBATOR_ENDPOINT, API_VERSION
-    """
-    load_dotenv()
-    INCUBATOR_KEY = os.getenv("INCUBATOR_KEY")
-    INCUBATOR_ENDPOINT = os.getenv("INCUBATOR_ENDPOINT")
-    API_VERSION = os.getenv("API_VERSION", "2024-10-01")
-    return INCUBATOR_KEY, INCUBATOR_ENDPOINT, API_VERSION
-'''
-
 import os
 from dotenv import load_dotenv
 
