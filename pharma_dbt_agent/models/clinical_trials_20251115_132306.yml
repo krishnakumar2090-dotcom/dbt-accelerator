@@ -1,0 +1,37 @@
+version: 2
+
+models:
+  - name: clinical_trials
+    description: "Clinical trials data combining trial, site, and enrollment information."
+    columns:
+      - name: trial_id
+        description: "Primary key for the trial."
+        tests:
+          - not_null
+          - unique
+      - name: protocol_number
+        description: "Standardized protocol number for the trial."
+        tests:
+          - not_null
+      - name: study_title
+        description: "Title of the study (latest version only)."
+        tests:
+          - not_null
+      - name: site_id
+        description: "Site identifier, part of the composite primary key with trial_id."
+        tests:
+          - not_null
+      - name: subject_count
+        description: "Aggregated count of subjects enrolled in the trial at the site."
+        tests:
+          - not_null
+      - name: enrollment_target
+        description: "Planned enrollment target for the trial."
+        tests:
+          - not_null
+    tags:
+      - clinical_trials
+      - dbt_model
+    meta:
+      owner: "Clinical Data Team"
+      source: "vcv_trials, vcv_sites, irt_enrollment"
